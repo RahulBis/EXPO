@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPO</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><b>Expo</b></a>
+        <ul>
+            <li><a href="#"><b>Home</b></a></li>
+            <li><a href="#"><b>About</b></a></li>
+            <li><a href="#"><b>Contact</b></a></li>
+        </ul>
+    </header>
+    <section>
+       <img src="stars.png" width="100%" id="stars">
+       <img src="moon.png" width="200" id="moon">
+       <img src="mountains.png"id="mountains">
+       <h2 id="tex"><b>Hello!</b></h2>
+       <img src="mountains front.png" id="mountains_front">
+    </section>
+
+
+    <div class="sec">
+        <h2>Explore</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores corporis placeat ex eius accusamus eos voluptatibus autem. Officia, voluptates dignissimos modi eos deserunt praesentium natus maxime facere cumque tenetur quasi! <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut excepturi maiores deserunt error nihil, adipisci, assumenda, aperiam voluptatibus ab illum provident doloribus sit officiis modi exercitationem ipsam quia aliquam a fuga corrupti necessitatibus. Neque autem repudiandae pariatur, cupiditate libero deserunt nesciunt maxime suscipit excepturi itaque amet asperiores harum corrupti id odio fuga voluptas mollitia necessitatibus nisi nemo voluptatum iure. Dignissimos quis iusto eum dolor architecto mollitia, laborum sint dolores impedit maiores assumenda quaerat vitae ab provident dolorem? Similique voluptate ipsam at quisquam molestiae? Repudiandae temporibus incidunt, quia commodi et assumenda ipsum in veritatis reprehenderit illo natus, cum cumque. Doloremque consectetur veritatis neque cupiditate provident? Animi eveniet obcaecati nam ducimus praesentium esse magni quia placeat ea, perferendis est commodi fugit nemo quisquam labore.<br><br> Sit ratione unde distinctio facilis, esse at dolorum ipsam? Quaerat itaque fugiat error veniam a, nisi adipisci expedita dolores quam nam laborum, deserunt, aspernatur sint animi consectetur ullam! Unde enim architecto, labore iusto in dolor blanditiis magnam amet aspernatur vitae cumque tenetur qui laudantium alias quisquam nihil, inventore provident. Autem rerum error mollitia dolorem iste ipsa placeat quis iure amet deserunt, optio nesciunt porro nemo nulla velit magnam perferendis totam cumque fuga accusamus consequuntur ea! Quisquam, ratione dolorum.<br><br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, illo? Saepe sed perferendis iure voluptates quidem harum voluptatem est, provident consequuntur neque quisquam quaerat reiciendis a, sint commodi, voluptatum blanditiis reprehenderit delectus dolorem! Rerum veniam sed a aut iure, rem distinctio recusandae suscipit ab cumque eaque dolorum laboriosam vel error architecto sunt? Quidem culpa voluptatum, veritatis fugiat illo blanditiis deleniti reprehenderit inventore, iusto maiores architecto, eaque unde. Explicabo, repellat commodi. Iusto culpa officia velit, libero natus incidunt fugit illum maiores?
+        </p>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains = document.getElementById('mountains');
+        let tex = document.getElementById('tex');
+        let mountains_front = document.getElementById('mountains_frount');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.25 + 'px';
+            mountains.style.top = value * 0.5 + 'px';
+            tex.style.marginLeft = value * 0.5 +'px';
+            mountains_frount.style.top = value * 0 + 'px';  
+        })
+    </script>
+</body>
+</html>

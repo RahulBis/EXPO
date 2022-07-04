@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(#2b1055,#7597de);
+}
+/* ------NAVBAR---- */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px 49vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+}
+header ul li a:hover{
+    background-color: white;
+    color: #2b1055;
+    border-radius: 10px;
+}
+/* -------NAVBAR------ */
+
+/* --MAIN BACKGROUND-- */
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+section #moon{
+    width: 200px;
+    height: 200px;
+    margin-left: 38rem;
+    margin-top: 50px
+}
+section #mountains{
+    margin-top: 17vh;
+    width: 99vh;
+    height: 85vh;
+    margin-left: 61vh;
+}
+#tex{
+    font-family: 'Poppins',sans-serif;
+    position: absolute;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    margin-top: 9rem;
+    font-size: 9em;
+    font-weight: 100;
+    padding-left: 28rem;
+}
+/* --MAIN BACKGROUND-- */
+
+/*-- Explore SECTION-- */
+.sec{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+}
+.sec h2{
+    font-size: 5.5em;
+    margin-bottom: 36px;
+    text-align: center;
+    color: white; 
+}
+.sec p{
+    font-size: 1.2em;
+    color: white;
+    line-height: 2;
+}
+/*-- Explore SECTION-- */
